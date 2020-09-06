@@ -11,5 +11,7 @@ templates_path = ['_templates']
 
 exclude_patterns = []
 
-html_theme = 'sphinx_rtd_theme'
+html_show_copyright = False
+html_show_sphinx = False
 html_static_path = ['_static']
+html_theme = 'sphinx_rtd_theme'
