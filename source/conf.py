@@ -1,10 +1,12 @@
+import sphinx_rtd_theme
+
 project = "Nissan Leaf OBD-II guide"
 copyright = "2020, Seth Fischer"
 author = "Seth Fischer"
 
 release = "0.1.0"
 
-extensions = []
+extensions = ["sphinx_rtd_theme"]
 
 templates_path = ["_templates"]
 
