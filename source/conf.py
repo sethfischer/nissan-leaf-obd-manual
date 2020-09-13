@@ -12,6 +12,8 @@ templates_path = ["_templates"]
 
 exclude_patterns = []
 
+numfig = True
+
 html_show_copyright = False
 html_show_sphinx = False
 html_static_path = ["_static"]
