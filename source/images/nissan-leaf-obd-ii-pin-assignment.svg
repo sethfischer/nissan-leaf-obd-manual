@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) and retouched by hand -->
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    version="1.1"
+    width="300"
+    height="120">
+    <title>OBD-II type A female connector shape</title>
+
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title>OBD-II type A female connector shape</dc:title>
+                <dc:date>2015-07-09</dc:date>
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>https://commons.wikimedia.org/wiki/User:Xoneca</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+                <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+                <dc:description>Shape of a female OBD-II type A connector.</dc:description>
+            </cc:Work>
+            <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+                <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+            </cc:License>
+        </rdf:RDF>
+    </metadata>
+
+    <path style="fill:none;stroke:#000;stroke-width:2"
+        d="m 292.19315,27.615632 c 0.82889,-2.0215 1.23944,-4.15873 1.24723,-6.17774 0,-8.765345 -7.10572,-15.8710552 -15.87106,-15.8710552 l -255.138635,0 c -8.765347,0 -15.8710654,7.1057102 -15.8710654,15.8710552 0.025355,2.18549 0.4628229,4.30365 1.2472269,6.17774 L 31.61607,96.810162 c 1.364575,3.554718 4.912826,5.627418 8.485436,5.624528 l 219.796964,0 c 4.11815,0.0706 7.31287,-2.27375 8.48544,-5.624528 z"/>
+    <path style="fill:none;stroke:#000;stroke-width:2"
+        d="m 128.26498,102.43548 0,11.99691 43.47003,0 0,-11.99691"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        x="58.107655"
+        y="46.669968"
+        width="183.784696"
+        height="14.663144"/>
+
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-1"
+        x="58.107655"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-2"
+        x="82.182953"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-3"
+        x="106.25825"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-4"
+        x="130.33354"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-5"
+        x="154.40884"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-6"
+        x="178.48415"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-7"
+        x="202.55945"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-8"
+        x="226.63475"
+        y="18.221235"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-9"
+        x="58.107655"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-10"
+        x="82.182953"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-11"
+        x="106.25825"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-12"
+        x="130.33354"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-13"
+        x="154.40884"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-14"
+        x="178.48415"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-15"
+        x="202.55945"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+    <rect style="fill:none;stroke:#000;stroke-width:2"
+        id="pin-16"
+        x="226.63475"
+        y="78.68541"
+        width="15.257595"
+        height="11.096434"/>
+</svg>
