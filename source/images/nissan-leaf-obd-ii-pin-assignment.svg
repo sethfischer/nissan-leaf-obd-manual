@@ -131,7 +131,7 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         y="18"
         style="fill:#fff"
         xlink:href="#pin-outline">
-        <title>Pin 7: Not connected;</title>
+        <title>Pin 7: Not connected</title>
     </use>
     <use id="pin-8-outline"
         x="226"
@@ -152,7 +152,7 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         y="78"
         style="fill:#fff"
         xlink:href="#pin-outline">
-        <title>Pin 10: Not connected;</title>
+        <title>Pin 10: Not connected</title>
     </use>
     <use id="pin-11-outline"
         x="106"
