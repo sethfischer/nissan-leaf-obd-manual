@@ -6,7 +6,10 @@ author = "Seth Fischer"
 
 release = "0.1.0"
 
-extensions = ["sphinx_rtd_theme"]
+extensions = [
+    "sphinx_rtd_theme",
+    "sphinxcontrib.bibtex",
+]
 
 templates_path = ["_templates"]
 
