@@ -1,6 +1,6 @@
-#######
+=======
 License
-#######
+=======
 
 .. image:: images/cc-by-4.0.png
     :alt: Creative Commons License
