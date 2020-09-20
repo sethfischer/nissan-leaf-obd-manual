@@ -3,14 +3,14 @@
 ==========================
 
 .. toctree::
-    :maxdepth: 1
     :caption: Indices
+    :maxdepth: 1
 
     z-bibliography
 
 .. toctree::
-    :maxdepth: 1
     :caption: Colophon
+    :maxdepth: 1
 
     license
     disclaimer
