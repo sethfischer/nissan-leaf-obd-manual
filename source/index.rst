@@ -12,5 +12,6 @@
     :caption: Colophon
     :maxdepth: 1
 
+    related
     license
     disclaimer
