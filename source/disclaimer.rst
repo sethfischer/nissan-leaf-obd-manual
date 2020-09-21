@@ -9,7 +9,7 @@ Official advice from *Nissan*
 Official advice from *Nissan* is to never connect an after market diagnostic
 tool to the data link connector.
 
-.. topic:: Advisory issued by *Nissan* :cite:`2015:nissan` English translation
+.. topic:: Advisory issued by *Nissan* :cite:`nissan:recall-data` English translation
     by *Google Translate*
     :name: nissan-advisory-translation-en
 
@@ -23,7 +23,7 @@ tool to the data link connector.
         may not operate normally, leading to unexpected troubles.
 
 
-.. topic:: Advisory issued by *Nissan* :cite:`2015:nissan`
+.. topic:: Advisory issued by *Nissan* :cite:`nissan:recall-data`
     :name: nissan-advisory
 
         **OBD-Ⅱコネクタへの社外品の通信機器装着について**
