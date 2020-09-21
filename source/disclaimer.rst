@@ -3,11 +3,11 @@ Disclaimer
 ==========
 
 
-Official advice from *Nissan*
------------------------------
+Advisory issued by *Nissan*
+---------------------------
 
-Official advice from *Nissan* is to never connect an after market diagnostic
-tool to the data link connector.
+An advisory issued by *Nissan* states that an after market diagnostic tool
+should never be connected to the data link connector.
 
 .. topic:: Advisory issued by *Nissan* :cite:`nissan:recall-data` English translation
     by *Google Translate*
