@@ -2,6 +2,10 @@
 License
 =======
 
+*Nissan* and *Leaf* are trade marks of Nissan Jidosha Kabushiki Kaisha (also
+trading as Nissan Motor Co., Ltd.).
+
+
 .. image:: images/cc-by-4.0.png
     :alt: Creative Commons License
     :target: http://creativecommons.org/licenses/by/4.0/
