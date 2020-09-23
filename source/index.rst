@@ -1,6 +1,6 @@
-==========================
-*Nissan Leaf* OBD-II guide
-==========================
+========================
+Nissan Leaf OBD-II guide
+========================
 
 .. toctree::
     :caption: Indices
