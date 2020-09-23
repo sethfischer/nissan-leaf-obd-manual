@@ -22,6 +22,12 @@ html_show_sphinx = False
 html_static_path = ["_static"]
 html_theme = "sphinx_rtd_theme"
 
+latex_engine = 'platex'
+latex_use_xindy = False
+
 latex_elements = {
     "papersize": "a4paper",
+    'preamble': r'''
+\usepackage{CJKutf8}
+''',
 }
