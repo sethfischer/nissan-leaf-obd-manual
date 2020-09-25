@@ -28,11 +28,11 @@ should never be connected to the data link connector.
 
     \begin{quote}
     \begin{CJK*}{UTF8}{min}
-    \textbf{OBD-Ⅱコネクタへの社外品の通信機器装着について}
+    \textbf{\OBDtwo コネクタへの社外品の通信機器装着について}
 
-    \textbf{OBD-Ⅱコネクタに社外品の通信機器を取り付けないでください}
+    \textbf{\OBDtwo コネクタに社外品の通信機器を取り付けないでください}
 
-    OBD-Ⅱコネクタへ取り付けた社外品の通信機器が、車両のエンジン・ブレーキ・
+    \OBDtwo コネクタへ取り付けた社外品の通信機器が、車両のエンジン・ブレーキ・
     ステアリング等の
 
     制御に影響を与え、正常に作動せず、思わぬトラブルにつながるおそれがあります。

@@ -29,5 +29,6 @@ latex_elements = {
     "papersize": "a4paper",
     'preamble': r'''
 \usepackage{CJKutf8}
+\newcommand*{\OBDtwo}{OBD-\uppercase\expandafter{\romannumeral 2}}
 ''',
 }
