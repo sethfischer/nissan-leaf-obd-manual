@@ -10,6 +10,7 @@ extensions = [
     "sphinx_rtd_theme",
     "sphinxcontrib.bibtex",
 ]
+nitpicky = True
 numfig = True
 templates_path = ["_templates"]
 
