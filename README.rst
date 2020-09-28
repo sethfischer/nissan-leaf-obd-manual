@@ -15,5 +15,5 @@
     :target: https://github.com/sethfischer/nissan-leaf-obd2-guide/actions?query=workflow%3Atest
     :alt: Test Status
 .. |linkcheck-status| image:: https://github.com/sethfischer/nissan-leaf-obd2-guide/workflows/link%20check/badge.svg
-    :target: https://github.com/sethfischer/nissan-leaf-obd2-guide/actions?query=workflow%3Alinkcheck
+    :target: https://github.com/sethfischer/nissan-leaf-obd2-guide/actions?query=workflow%3A%22link+check%22
     :alt: Link Check Status
