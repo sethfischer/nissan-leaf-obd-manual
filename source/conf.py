@@ -23,10 +23,10 @@ html_theme = "sphinx_rtd_theme"
 
 latex_elements = {
     "papersize": "a4paper",
-    'preamble': r'''
+    "preamble": r"""
 \usepackage{CJKutf8}
 \newcommand*{\OBDtwo}{OBD-\uppercase\expandafter{\romannumeral 2}}
-''',
+""",
 }
-latex_engine = 'platex'
+latex_engine = "platex"
 latex_use_xindy = False
