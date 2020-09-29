@@ -1,10 +1,27 @@
+from datetime import date
+from subprocess import CalledProcessError, run
+
 import sphinx_rtd_theme
 
 project = "Nissan Leaf OBD-II guide"
 author = "Seth Fischer"
 copyright = "2020, Seth Fischer"
 
-release = "0.1.0"
+try:
+    process = run(
+        ["git", "rev-parse", "--short", "HEAD"], capture_output=True, encoding="ascii"
+    )
+    revision = process.stdout.strip()
+except CalledProcessError as error:
+    revision = None
+
+version = date.today().strftime("%Y.%-m.%-d")
+
+if revision is not None:
+    release = "{}+{}".format(version, revision)
+else:
+    release = version
+
 
 extensions = [
     "sphinx_rtd_theme",
