@@ -32,6 +32,7 @@ pep517==0.8.2
 progress==1.5
 pybtex==0.22.2
 pybtex-docutils==0.2.2
+pyenchant==3.1.1
 Pygments==2.6.1
 pylint==2.6.0
 pyparsing==2.4.6
@@ -53,6 +54,7 @@ sphinxcontrib-htmlhelp==1.0.3
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
+sphinxcontrib-spelling==5.4.0
 toml==0.10.1
 typed-ast==1.4.1
 typing-extensions==3.7.4.3

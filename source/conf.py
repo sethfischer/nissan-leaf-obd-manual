@@ -26,6 +26,7 @@ else:
 extensions = [
     "sphinx_rtd_theme",
     "sphinxcontrib.bibtex",
+    "sphinxcontrib.spelling",
 ]
 nitpicky = True
 numfig = True
@@ -47,3 +48,11 @@ latex_elements = {
 }
 latex_engine = "platex"
 latex_use_xindy = False
+
+
+spelling_exclude_patterns = [
+    "disclaimer.rst",  # contains Japanese characters
+]
+spelling_lang = "en_GB"
+spelling_word_list_filename = "wordlist.txt"
+tokenizer_lang = "en_GB"

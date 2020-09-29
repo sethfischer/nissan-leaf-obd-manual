@@ -3,3 +3,4 @@
 set -o errexit -o noclobber -o nounset
 
 make linkcheck
+make spelling

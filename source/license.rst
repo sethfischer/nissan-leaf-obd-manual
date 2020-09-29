@@ -1,3 +1,9 @@
+.. spelling::
+
+    Jidosha
+    Kabushiki
+    Kaisha
+
 =======
 License
 =======
