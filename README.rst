@@ -2,7 +2,13 @@
 *Nissan Leaf* OBD-II guide
 ##########################
 
-|cc-by-4.0| |docs-status| |test-status| |linkcheck-status|
+|docs-status| |test-status| |linkcheck-status|
+
+
+License
+-------
+
+|cc-by-4.0|
 
 
 .. |cc-by-4.0| image:: https://img.shields.io/github/license/sethfischer/nissan-leaf-obd2-guide
