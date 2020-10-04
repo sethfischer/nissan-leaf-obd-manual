@@ -1,0 +1,3 @@
+[submodule "styles/Google"]
+	path = styles/Google
+	url = https://github.com/errata-ai/Google.git
