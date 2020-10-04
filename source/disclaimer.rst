@@ -2,6 +2,8 @@
 Disclaimer
 ==========
 
+.. note:: This project is neither maintained nor endorsed by Nissan.
+
 
 Advisory issued by *Nissan*
 ---------------------------
