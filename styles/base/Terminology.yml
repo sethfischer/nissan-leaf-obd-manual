@@ -1,0 +1,9 @@
+extends: substitution
+message: Prefer '%s' over '%s'
+ignorecase: true
+level: error
+swap:
+  "obd 2": OBD-II
+  obd-2: OBD-II
+  obd: OBD
+  obd2: OBD-II
