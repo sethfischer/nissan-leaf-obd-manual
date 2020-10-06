@@ -1,0 +1,9 @@
+extends: conditional
+message: "Spell out '%s', if it's unfamiliar to the audience."
+level: suggestion
+ignorecase: false
+first: '\b([A-Z]{3,5})\b'
+second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
+exceptions:
+  - CAN
+  - USB
