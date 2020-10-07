@@ -60,8 +60,8 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     </metadata>
     <style>
         rect {
-            stroke-width:2;
-            stroke:#000;
+            stroke-width: 2;
+            stroke: #000;
         }
         text {
             fill: #000;
