@@ -140,6 +140,10 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         xlink:href="#pin-outline">
         <title>Pin 8: +12 V dc when vehicle is powered on</title>
     </use>
+    <path id="pin-8-symbol-powered-on"
+        d="M 227,28 h 13 l -6.5,-9 Z"
+        style="fill:#f00"
+        aria-hidden="true" />
     <use id="pin-9-outline"
         x="58"
         y="78"
@@ -258,8 +262,4 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         y="82"
         style="text-align:start;text-anchor:start"
         aria-hidden="true">16</text>
-    <path id="pin-8-symbol-powered-on"
-        d="m 239.26514,28.141211 -10.40152,-0.04655 5.24108,-8.984702 z"
-        style="fill:#ff0000"
-        aria-hidden="true" />
 </svg>
