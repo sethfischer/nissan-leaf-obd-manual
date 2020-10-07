@@ -190,7 +190,7 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-14-outline"
         x="178"
         y="78"
-        style="fill:#ffff"
+        style="fill:#fff"
         xlink:href="#pin-outline">
         <title>Pin 14: Car-CAN low</title>
     </use>
