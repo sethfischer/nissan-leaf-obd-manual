@@ -101,7 +101,7 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-3-outline"
         x="106"
         y="18"
-        style="fill:#696969"
+        style="fill:#ffa500"
         xlink:href="#pin-outline">
         <title>Pin 3: AV-CAN low</title>
     </use>
@@ -157,17 +157,25 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-11-outline"
         x="106"
         y="78"
-        style="fill:#808080"
+        style="fill:#fff"
         xlink:href="#pin-outline">
         <title>Pin 11: AV-CAN high</title>
     </use>
+    <path id="pin-11-symbol-can-low"
+        style="fill:#ffa500"
+        d="m 107,88 h 13 l -13,-9 z"
+        aria-hidden="true" />
     <use id="pin-12-outline"
         x="130"
         y="78"
-        style="fill:#add8e6"
+        style="fill:#fff"
         xlink:href="#pin-outline">
         <title>Pin 12: EV-CAN low</title>
     </use>
+    <path id="pin-12-symbol-can-low"
+        style="fill:#00008b"
+        d="m 131,88 h 13 l -13,-9 z"
+        aria-hidden="true" />
     <use id="pin-13-outline"
         x="154"
         y="78"
@@ -178,10 +186,14 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-14-outline"
         x="178"
         y="78"
-        style="fill:#90ee90"
+        style="fill:#ffff"
         xlink:href="#pin-outline">
         <title>Pin 14: Car-CAN low</title>
     </use>
+    <path id="pin-14-symbol-can-low"
+        style="fill:#006400"
+        d="m 179,88 h 13 l -13,-9 z"
+        aria-hidden="true" />
     <use id="pin-15-outline"
         x="202"
         y="78"
@@ -246,7 +258,7 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         y="82"
         style="text-align:start;text-anchor:start"
         aria-hidden="true">16</text>
-    <path id="pin-8-powered-on-symbol"
+    <path id="pin-8-symbol-powered-on"
         d="m 239.26514,28.141211 -10.40152,-0.04655 5.24108,-8.984702 z"
         style="fill:#ff0000"
         aria-hidden="true" />
