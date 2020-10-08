@@ -115,10 +115,14 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-5-outline"
         x="154"
         y="18"
-        style="fill:#000"
+        style="fill:#fff"
         xlink:href="#pin-outline">
         <title>Pin 5: Signal ground</title>
     </use>
+    <path id="pin-5-symbol-signal-ground"
+        d="M 155,19 h 13 l -6.5,9 Z"
+        style="fill:#000"
+        aria-hidden="true" />
     <use id="pin-6-outline"
         x="178"
         y="18"
@@ -140,8 +144,9 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
         xlink:href="#pin-outline">
         <title>Pin 8: +12 V dc when vehicle is powered on</title>
     </use>
-    <path id="pin-8-symbol-powered-on"
-        d="M 227,28 h 13 l -6.5,-9 Z"
+    <circle cx="233.5"
+        cy="23.5"
+        r="4.5"
         style="fill:#f00"
         aria-hidden="true" />
     <use id="pin-9-outline"
