@@ -101,10 +101,14 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-3-outline"
         x="106"
         y="18"
-        style="fill:#ffa500"
+        style="fill:#fff"
         xlink:href="#pin-outline">
         <title>Pin 3: AV-CAN low</title>
     </use>
+    <path id="pin-3-symbol-can-low"
+        style="fill:#ffa500"
+        d="m 107,28 h 13 l -13,-9 z"
+        aria-hidden="true" />
     <use id="pin-4-outline"
         x="130"
         y="18"
@@ -166,14 +170,10 @@ Pin 16: +12 V dc from accessory battery.</dc:description>
     <use id="pin-11-outline"
         x="106"
         y="78"
-        style="fill:#fff"
+        style="fill:#ffa500"
         xlink:href="#pin-outline">
         <title>Pin 11: AV-CAN high</title>
     </use>
-    <path id="pin-11-symbol-can-low"
-        style="fill:#ffa500"
-        d="m 107,88 h 13 l -13,-9 z"
-        aria-hidden="true" />
     <use id="pin-12-outline"
         x="130"
         y="78"
