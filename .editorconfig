@@ -14,7 +14,7 @@ max_line_length = 120
 [*.py]
 max_line_length = 88
 
-[*.yml]
+[*.{bib,yml}]
 indent_size = 2
 
 [.gitmodules]
