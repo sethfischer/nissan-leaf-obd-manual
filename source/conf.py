@@ -3,7 +3,7 @@ from subprocess import CalledProcessError, run
 
 import sphinx_rtd_theme
 
-project = "Nissan Leaf OBD-II guide"
+project = "Nissan Leaf OBD-II manual"
 author = "Seth Fischer"
 copyright = "2020, Seth Fischer"
 
