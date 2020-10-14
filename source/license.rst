@@ -12,7 +12,7 @@ License
 trading as Nissan Motor Co., Ltd.).
 
 
-.. image:: images/cc-by-4.0.*
+.. image:: _static/images/cc-by-4.0.*
     :alt: Creative Commons License
     :target: https://creativecommons.org/licenses/by/4.0/
 
