@@ -7,6 +7,7 @@ Nissan Leaf OBD-II manual
     :maxdepth: 1
 
     z-bibliography
+    genindex
 
 .. toctree::
     :caption: Colophon
