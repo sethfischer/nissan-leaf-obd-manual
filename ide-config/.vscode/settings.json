@@ -1,0 +1,44 @@
+{
+    "[html]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+    "[python]": {
+        "editor.rulers": [
+            88
+        ]
+    },
+    "[restructuredtext]": {
+        "editor.rulers": [
+            80
+        ]
+    },
+    "editor.formatOnSave": true,
+    "files.trimFinalNewlines": true,
+    "python.formatting.provider": "black",
+    "python.pythonPath": ".venv/bin/python",
+    "restructuredtext.builtDocumentationPath": "${workspaceFolder}/build",
+    "restructuredtext.confPath": "${workspaceFolder}/source",
+    "spellright.configurationScope": "workspace",
+    "spellright.configurationUpdate": true,
+    "spellright.documentTypes": [
+        "html",
+        "plaintext",
+        "python",
+        "restructuredtext",
+        "shellscript"
+    ],
+    "spellright.ignoreFiles": [
+        ".venv/**"
+    ],
+    "spellright.ignoreRegExpsByClass": {
+        "python": [
+            "/#!/usr/bin/env/g"
+        ]
+    },
+    "spellright.language": [
+        "en_NZ"
+    ],
+    "spellright.recheckOnSave": true
+}

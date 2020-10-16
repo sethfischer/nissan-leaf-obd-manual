@@ -20,6 +20,11 @@ git-hooks: .git/hooks/pre-commit
 .git/hooks/%: git-hooks/%.sh
 	install --mode=700 $< $@
 
+.PHONY: install-ide-config
+install-ide-config:
+	rsync --recursive ide-config/ .
+	cp source/wordlist.txt .vscode/spellright.dict
+
 .PHONY: lint
 lint: lint-prose
 

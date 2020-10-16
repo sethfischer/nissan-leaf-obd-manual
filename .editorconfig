@@ -8,6 +8,9 @@ indent_style = space
 insert_final_newline = true
 max_line_length = 79
 
+[{.vscode/extensions.json,ide-config/.vscode/extensions.json}]
+end_of_line = crlf
+
 [*.html]
 max_line_length = 120
 
