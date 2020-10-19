@@ -7,6 +7,7 @@
 image_dir = source/_static/images
 
 targets := $(image_dir)/cc-by-4.0.pdf \
+$(image_dir)/nissan-leaf-diagnostic-connector-pins.pdf \
 $(image_dir)/nissan-leaf-diagnostic-connector.jpeg \
 $(image_dir)/nissan-leaf-diagnostic-connector.pdf
 
@@ -18,6 +19,15 @@ all: $(targets)
 
 $(image_dir)/cc-by-4.0.pdf : $(image_dir)/cc-by-4.0.eps
 	ghostscript -dEPSCrop -sDEVICE=pdfwrite -o $@ $<
+
+$(image_dir)/nissan-leaf-diagnostic-connector-pins.pdf : $(image_dir)/nissan-leaf-diagnostic-connector-pins.svg
+	convert $< $@
+	exiftool \
+	-overwrite_original \
+	-Author="Seth Fischer" \
+	-Title="Nissan Leaf OBD-II diagnostic connector pin assignment" \
+	-Subject="Nissan Leaf OBD-II diagnostic connector pin assignment" \
+	$@
 
 $(image_dir)/nissan-leaf-diagnostic-connector.jpeg : $(image_dir)/nissan-leaf-diagnostic-connector-high-quality.jpeg
 	convert -strip -interlace Plane -gaussian-blur 0.05 -quality 75% $< $@
