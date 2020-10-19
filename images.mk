@@ -5,11 +5,13 @@
 # environment.
 
 image_dir = source/_static/images
+symbol_pdfs := $(patsubst %.svg,%.pdf,$(wildcard $(image_dir)/symbols/*.svg))
 
 targets := $(image_dir)/cc-by-4.0.pdf \
 $(image_dir)/nissan-leaf-diagnostic-connector-pins.pdf \
 $(image_dir)/nissan-leaf-diagnostic-connector.jpeg \
-$(image_dir)/nissan-leaf-diagnostic-connector.pdf
+$(image_dir)/nissan-leaf-diagnostic-connector.pdf \
+$(symbol_pdfs)
 
 cc_by_4 = "This work is licensed under a Creative Commons Attribution 4.0 \
 International License https://creativecommons.org/licenses/by/4.0/"
@@ -51,6 +53,9 @@ $(image_dir)/nissan-leaf-diagnostic-connector.pdf : $(image_dir)/nissan-leaf-dia
 	-Title="2013 Nissan Leaf diagnostic connector" \
 	-Subject="2013 Nissan Leaf diagnostic connector" \
 	$@
+
+$(image_dir)/symbols/%.pdf : $(image_dir)/symbols/%.svg
+	convert $< $@
 
 .PHONY : clean
 clean :
