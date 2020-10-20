@@ -9,17 +9,17 @@ Nissan Leaf OBD-II manual
     diagnostic-connector
 
 .. toctree::
-    :caption: Indices
-    :maxdepth: 1
-
-    glossary
-    z-bibliography
-    genindex
-
-.. toctree::
-    :caption: Colophon
+    :caption: End matter
     :maxdepth: 1
 
     related
-    license
+    glossary
+    z-bibliography
     disclaimer
+    license
+
+
+Indices
+-------
+
+* :ref:`genindex`
