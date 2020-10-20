@@ -1,3 +1,5 @@
+ethernet
+ISO
 Jidosha
 Kabushiki
 Kaisha

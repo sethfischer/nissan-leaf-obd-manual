@@ -74,7 +74,9 @@ extensions = [
 ]
 nitpicky = True
 numfig = True
+numfig_format = {"figure": "Figure %s"}
 templates_path = ["_templates"]
+trim_footnote_reference_space = True
 
 
 html_show_copyright = False
