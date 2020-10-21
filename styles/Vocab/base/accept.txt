@@ -1,8 +1,13 @@
+DIS
+DLC
 ethernet
 ISO
 Jidosha
 Kabushiki
 Kaisha
+kilobaud
 Leaf
+microcontrollers
 Nissan
 OBD
+SAE

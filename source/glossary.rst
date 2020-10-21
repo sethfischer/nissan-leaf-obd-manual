@@ -39,7 +39,7 @@ Glossary
 
     diagnostic connector
         A physical connector used to access :term:`on-board diagnostics` and
-        data streams. The :term:`OBD-II` data link connector (defined in
+        data streams. The :term:`OBD-II` diagnostic connector (defined in
         :term:`ISO 15031-3`) is a 16-pin connector which, on a *Nissan Leaf*,
         is located beneath the steering column.
 
