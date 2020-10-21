@@ -11,6 +11,7 @@ Nissan Leaf OBD-II manual
 .. toctree::
     :caption: End matter
     :maxdepth: 1
+    :titlesonly:
 
     related
     glossary
