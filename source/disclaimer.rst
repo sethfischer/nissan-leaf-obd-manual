@@ -9,7 +9,7 @@ Advisory issued by *Nissan*
 ---------------------------
 
 An advisory issued by *Nissan* states that an after market diagnostic tool
-should never be connected to the data link connector.
+should never be connected to the diagnostic connector.
 
     .. vale off
 
