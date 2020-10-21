@@ -12,7 +12,7 @@ Glossary
     AV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries predominantly
         infotainment data. Exposed on pins 3 and 11 of the
-        :term:`data link connector`.
+        :term:`diagnostic connector`.
 
     CAN
         Abbreviation for :term:`controller area network`.
@@ -24,7 +24,7 @@ Glossary
 
     Car-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus exposed on pins 6 and 14 of
-        the :term:`data link connector`.
+        the :term:`diagnostic connector`.
 
     communication protocol
         A system of rules that allow two or more entities of a communications
@@ -49,7 +49,7 @@ Glossary
     EV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries data related to
         the traction battery and electric motor drive system. Exposed on pins 3
-        and 11 of the :term:`data link connector`.
+        and 11 of the :term:`diagnostic connector`.
 
     ISO 15031-3
         Document published by the
@@ -80,7 +80,7 @@ Glossary
         Document published by `SAE International`_ titled *Diagnostic Connector
         Equivalent to ISO/DIS 15031-3:December 14, 2001*. This document
         specifies the functional requirements for the physical :term:`OBD-II`
-        :term:`data link connector`. The equivalent international standard is
+        :term:`diagnostic connector`. The equivalent international standard is
         :term:`ISO 15031-3`.
 
     Type A diagnostic connector
