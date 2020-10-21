@@ -2,6 +2,7 @@
     :description: Description of the Nissan Leaf OBD-II diagnostic connector
         including protocols and pin assignments.
 
+.. _diagnostic-connector:
 
 ====================
 Diagnostic connector
