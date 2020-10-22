@@ -68,7 +68,6 @@ Glossary
         Abbreviation for kilobaud where 1 kBd = 1000 Bd (baud).
 
     OBD-II
-    OBD2
         Abbreviation for revision two of the :term:`on-board diagnostics`
         standardised interface.
 
