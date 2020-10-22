@@ -34,17 +34,11 @@ Glossary
         A vehicle bus standard designed to allow microcontrollers and devices
         to communicate without a host computer.
 
-    data link connector
-        See :term:`diagnostic connector`.
-
     diagnostic connector
         A physical connector used to access :term:`on-board diagnostics` and
         data streams. The :term:`OBD-II` diagnostic connector (defined in
         :term:`ISO 15031-3`) is a 16-pin connector which, on a *Nissan Leaf*,
         is located beneath the steering column.
-
-    DLC
-        Abbreviation for :term:`data link connector`.
 
     EV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries data related to
