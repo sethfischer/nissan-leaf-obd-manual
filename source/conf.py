@@ -67,6 +67,7 @@ else:
     release = version
 
 
+exclude_patterns = ["includes/*"]
 extensions = [
     "sphinx_rtd_theme",
     "sphinxcontrib.bibtex",
