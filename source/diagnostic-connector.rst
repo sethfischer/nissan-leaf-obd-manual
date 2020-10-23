@@ -121,4 +121,4 @@ powered on, AV‑CAN high, EV‑CAN low, and EV‑CAN high.
 .. [3] :cite:`mynissanleaf:can-decoding`.
 
 
-.. include:: includes/diagnostic-connector-symbols.rst
+.. include:: /includes/diagnostic-connector-symbols.rst
