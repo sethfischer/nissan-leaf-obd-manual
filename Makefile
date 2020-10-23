@@ -14,8 +14,8 @@ help:
 
 .PHONY: help Makefile
 
-.PHONY: git-hooks
-git-hooks: .git/hooks/pre-commit
+.PHONY: install-git-hooks
+install-git-hooks: .git/hooks/pre-commit
 
 .git/hooks/%: git-hooks/%.sh
 	install --mode=700 $< $@
