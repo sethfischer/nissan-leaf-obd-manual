@@ -27,7 +27,7 @@ seen in :numref:`leaf-diagnostic-connector`.
     :height: 480
     :width: 640
 
-    *Nissan Leaf* OBD-II diagnostic connector
+    *Nissan Leaf* OBD-II vehicle diagnostic connector (mating-end view)
 
 
 CAN buses
