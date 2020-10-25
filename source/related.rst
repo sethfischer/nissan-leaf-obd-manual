@@ -2,10 +2,9 @@
 Related material
 ================
 
-Service manual
---------------
 
-Service manuals may be purchased from `Nissan Publications`_.
+`Nissan Publications`_
+    *Nissan* service manuals.
 
 
 .. _`Nissan Publications`: https://www.nissan-techinfo.com/
