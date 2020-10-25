@@ -23,7 +23,7 @@ $(image_dir)/cc-by-4.0.pdf : $(image_dir)/cc-by-4.0.eps
 	ghostscript -dEPSCrop -sDEVICE=pdfwrite -o $@ $<
 
 $(image_dir)/nissan-leaf-diagnostic-connector-pins.pdf : $(image_dir)/nissan-leaf-diagnostic-connector-pins.svg
-	convert $< $@
+	rsvg-convert -f pdf -o $@ $<
 	exiftool \
 	-overwrite_original \
 	-Author="Seth Fischer" \
@@ -55,7 +55,7 @@ $(image_dir)/nissan-leaf-diagnostic-connector.pdf : $(image_dir)/nissan-leaf-dia
 	$@
 
 $(image_dir)/symbols/%.pdf : $(image_dir)/symbols/%.svg
-	convert $< $@
+	rsvg-convert -f pdf -o $@ $<
 
 .PHONY : clean
 clean :
