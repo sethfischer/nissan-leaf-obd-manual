@@ -15,6 +15,7 @@ $(symbol_pdfs)
 
 cc_by_4 = "This work is licensed under a Creative Commons Attribution 4.0 \
 International License https://creativecommons.org/licenses/by/4.0/"
+project_title = "Nissan Leaf OBD manual"
 
 .PHONY: all
 all: $(targets)
@@ -27,6 +28,7 @@ $(image_dir)/nissan-leaf-diagnostic-connector-pins.pdf : $(image_dir)/nissan-lea
 	exiftool \
 	-overwrite_original \
 	-Author="Seth Fischer" \
+	-Producer=$(project_title) \
 	-Title="Nissan Leaf OBD-II diagnostic connector pin assignment" \
 	-Subject="Nissan Leaf OBD-II diagnostic connector pin assignment" \
 	$@
@@ -38,6 +40,7 @@ $(image_dir)/nissan-leaf-diagnostic-connector.jpeg : $(image_dir)/nissan-leaf-di
 	-Artist="Seth Fischer" \
 	-AttributionName="Seth Fischer" \
 	-AttributionURL="https://seth.fischer.nz/" \
+	-Comment=$(project_title) \
 	-DateTimeOriginal="2020:09:27 17:43:49" \
 	-Description="2013 Nissan Leaf diagnostic connector" \
 	-License="https://creativecommons.org/licenses/by/4.0/" \
@@ -50,6 +53,7 @@ $(image_dir)/nissan-leaf-diagnostic-connector.pdf : $(image_dir)/nissan-leaf-dia
 	exiftool \
 	-overwrite_original \
 	-Author="Seth Fischer" \
+	-Producer=$(project_title) \
 	-Title="2013 Nissan Leaf diagnostic connector" \
 	-Subject="2013 Nissan Leaf diagnostic connector" \
 	$@
