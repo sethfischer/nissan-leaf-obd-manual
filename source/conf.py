@@ -67,7 +67,10 @@ else:
     release = version
 
 
-exclude_patterns = ["includes/*"]
+exclude_patterns = [
+    "code/*",
+    "includes/*",
+]
 extensions = [
     "sphinx_rtd_theme",
     "sphinxcontrib.bibtex",
@@ -85,6 +88,7 @@ html_show_sphinx = False
 html_static_path = ["_static"]
 html_theme = "sphinx_rtd_theme"
 html_title = project
+html_use_index = True
 
 
 latex_elements = {

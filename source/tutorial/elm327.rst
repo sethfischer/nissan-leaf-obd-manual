@@ -1,0 +1,255 @@
+.. index:: AZE0, ELM327
+
+.. meta::
+    :description: An introduction to reading the Car-CAN bus of the Nissan Leaf
+        using an ELM327 diagnostic tool.
+
+
+============================================================
+Monitoring the *Nissan Leaf* using an ELM327 diagnostic tool
+============================================================
+
+An introduction to reading the :term:`Car-CAN` bus of the *Nissan Leaf* using
+an :term:`ELM327 compatible` :term:`diagnostic tool`.
+
+
+Requirements
+------------
+
+#.  ELM327 compatible :term:`OBD-II` diagnostic tool.
+#.  :term:`Terminal application<terminal application>` running on a mobile or
+    laptop.
+#.  *Nissan Leaf*.
+
+The examples in this tutorial use a *Vgate* Wi-Fi diagnostic tool and
+`Serial Wi-Fi Terminal`_ for Android by `Kai Morich`_. The same developer has
+also written *Serial USB Terminal* and *Serial Bluetooth Terminal* for Android.
+
+The vehicle used in this tutorial is:
+
+:Vehicle: *Nissan Leaf*
+:Year: 2013
+:Model: AZE0-0 G-spec
+:CAN protocol: ISO 15765‑4 (CAN 11/500)
+
+
+ELM327 OBD-II diagnostic tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ELM327 diagnostic tools are available supporting either wireless or wired
+:term:`communication protocols<communication protocol>`. Wireless communication
+protocols include:
+
+* :abbr:`BT (Bluetooth)`
+* :abbr:`BTL (Bluetooth Low Energy)`
+* Wi-Fi
+
+Wi-Fi diagnostic tools have the disadvantage that while in use your mobile or
+laptop is unable to connect to any other Wi-Fi network.
+
+The most common wired communication protocol is
+:abbr:`USB (Universal Serial Bus)`.
+
+.. note::
+
+    Unfortunately the market is flooded with counterfeit ELM327
+    microcontrollers which have made their way into inexpensive diagnostic
+    tools. Often these devices do not fully support the
+    `ELM327 specification`_.
+
+    Genuine ELM327 microcontrollers are supplied by `ELM Electronics Inc.`_ who
+    recommend seeking the assurance from the device vendor that they use
+    genuine *ELM* parts :cite:`elm:faq`.
+
+
+Terminal application
+~~~~~~~~~~~~~~~~~~~~
+
+Select a :term:`terminal application` that can be configured to connect to your
+diagnostic tool via the appropriate :term:`communication protocol`.
+
+
+Nissan Leaf
+~~~~~~~~~~~
+
+The *Leaf* has three :term:`CAN` buses commonly referred to as:
+:term:`Car-CAN`, :term:`EV-CAN`, and :term:`AV-CAN`. The diagnostic connector
+CAN pin assignments are depicted in :numref:`leaf-dc-pin-assignments` and
+listed in :numref:`leaf-dc-can-pin-assignments`. The :term:`CAN protocol` used
+in the Car-CAN bus of the *Leaf* is :term:`ISO 15765-4`
+CAN (11-bit ID, 500 :term:`kBd`) which is often abbreviated to
+"ISO 15765‑4 (CAN 11/500)."
+
+.. figure:: /_static/images/nissan-leaf-diagnostic-connector-pins.*
+    :alt: Nissan Leaf OBD-II diagnostic connector pin assignment
+    :name: leaf-dc-pin-assignments
+    :height: 120
+    :width: 300
+
+    *Nissan Leaf* ISO 15031-3 diagnostic connector pin assignment (mating-end
+    view)
+
+.. table:: Nissan Leaf ISO 15031-3 diagnostic connector CAN bus pin assignments
+    :name: leaf-dc-can-pin-assignments
+
+    +---------+-------------------------------------------+
+    |         | Diagnostic connector pins                 |
+    | CAN bus +---------------------+---------------------+
+    |         | CAN high            | CAN low             |
+    +=========+=====================+=====================+
+    | Car-CAN | |dc-car-can-high| 6 | |dc-car-can-low| 14 |
+    +---------+---------------------+---------------------+
+    | EV-CAN  | |dc-ev-can-high| 12 | |dc-ev-can-low| 13  |
+    +---------+---------------------+---------------------+
+    | AV-CAN  | |dc-av-can-high| 3  | |dc-av-can-low| 11  |
+    +---------+---------------------+---------------------+
+
+Standard OBD-II diagnostic tools connect to the Car-CAN bus on pins 6 and 14.
+
+While the *Leaf* has a 16-pin OBD-II :term:`diagnostic connector` in compliance
+with :term:`ISO 15031-3`, and the Car-CAN protocol complies with
+ISO 15765‑4 (CAN 11/500), the vehicle does not support the standard
+:term:`PIDs<PID>` which are mandated for internal combustion engine vehicles.
+
+In addition to the *Leaf* not supporting standard PIDs there can be PID
+variations between *Leaf* models.
+
+
+Set up
+------
+
+Set up involves connecting the diagnostic tool to the vehicle and configuring
+the terminal application which runs on your mobile or laptop.
+
+.. Warning::
+
+    Using a poor quality diagnostic tool may cause the vehicle to behave
+    unexpectedly.
+
+
+Connect the diagnostic tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Insert the diagnostic tool into the vehicle's OBD-II diagnostic connector --
+which is found beneath the steering column. Then power-on the vehicle to
+activate the Car-CAN bus.
+
+
+Configure the terminal application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Configuration of the terminal application depends on the
+:term:`communication protocol` supported by your diagnostic tool and the
+terminal software being used.
+
+
+.. rubric:: Wi-Fi:
+
+#.  Connect to the diagnostic tool as you would connect to a Wi-Fi access
+    point.
+#.  Configure the terminal application with the host and port of the diagnostic
+    tool according to the user guide. Common configuration is:
+
+    :Host: 192.168.0.10
+    :Port: 35000
+    :Protocol: Raw
+
+
+.. rubric:: Bluetooth and Bluetooth Low Energy:
+
+#.  Pair the diagnostic tool with your mobile or laptop.
+#.  Once paired the tool is available for selection in the terminal
+    application.
+
+
+Diagnostic tool commands
+------------------------
+
+The ELM327 is instructed by sending a series of :term:`AT commands` from the
+terminal application.
+
+
+AT commands
+~~~~~~~~~~~
+
+Commands used in this tutorial are listed in table
+:numref:`command-descriptions`. The complete ELM327 command set can be found in
+the `ELM327 specification`_.
+
+.. table:: ELM327 AT commands used in this tutorial :cite:`elm:elm327`
+    :name: command-descriptions
+
+    +-----------+------------------------------------------------------+
+    | Command   | Description                                          |
+    +===========+======================================================+
+    | ATZ       | reset all                                            |
+    +-----------+------------------------------------------------------+
+    | ATI       | print the ELM327 firmware version ID                 |
+    +-----------+------------------------------------------------------+
+    | ATL1      | line feed on                                         |
+    +-----------+------------------------------------------------------+
+    | ATH1      | header control on                                    |
+    +-----------+------------------------------------------------------+
+    | ATS1      | print spaces on                                      |
+    +-----------+------------------------------------------------------+
+    | ATAL      | allow long messages                                  |
+    +-----------+------------------------------------------------------+
+    | ATSP6     | set :term:`CAN protocol` to ISO 15765-4 CAN (11/500) |
+    +-----------+------------------------------------------------------+
+    | ATCRA 358 | filter message with :term:`PID` 0x358                |
+    +-----------+------------------------------------------------------+
+    | ATMA      | monitor all                                          |
+    +-----------+------------------------------------------------------+
+
+
+Read turn signal status
+~~~~~~~~~~~~~~~~~~~~~~~
+
+In :numref:`elm327-session-0x358-turn-signal` the status of the vehicle's turn
+signal is read. Commands on lines 1 to 7 initialise the ELM327. Command
+``ATCRA 358`` on line 8 filters messages with the PID ``0x358``.
+
+.. literalinclude:: /code/elm327/358-turn-signal.txt
+    :caption: Read PID 0x358 -- turn signal status
+    :emphasize-lines: 10,13,16,19
+    :language: none
+    :linenos:
+    :name: elm327-session-0x358-turn-signal
+
+:download:`ELM327 session 0x358 turn signal status \
+</code/elm327/358-turn-signal.txt>`
+
+The output is displayed following the command ``ATMA`` on lines 10 to 21. As
+the turn signal leaver is operated the third byte changes correspondingly:
+
+:off: 80\ :sub:`16` = 10000000\ :sub:`2`
+:left signal: 82\ :sub:`16` = 10000010\ :sub:`2`
+:right signal: 84\ :sub:`16` = 10000100\ :sub:`2`
+
+
+A screenshot of the serial terminal session prior to executing ``ATMA`` is
+shown in :numref:`serial-terminal-elm327-morich`.
+
+.. figure:: /_static/images/serial-terminal-elm327-morich.*
+    :alt: ELM327 serial terminal session on an Android-powered device
+    :name: serial-terminal-elm327-morich
+    :height: 650
+    :width: 300
+
+    ELM327 serial terminal session on an Android-powered device
+    :cite:`morich:serial-wifi-terminal`
+
+
+.. seealso::
+
+    :doc:`/diagnostic-connector`
+        Detailed description of the *Leaf* OBD-II diagnostic connector.
+
+
+.. _`Serial Wi-Fi Terminal`: https://play.google.com/store/apps/details?id=de.kai_morich.serial_wifi_terminal
+.. _`Kai Morich`: https://play.google.com/store/apps/developer?id=Kai+Morich
+.. _`ELM327 specification`: https://www.elmelectronics.com/wp-content/uploads/2016/07/ELM327DS.pdf
+.. _`ELM Electronics Inc.`: https://www.elmelectronics.com/
+
+
+.. include:: /includes/diagnostic-connector-symbols.rst

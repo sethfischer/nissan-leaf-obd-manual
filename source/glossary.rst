@@ -9,6 +9,10 @@ Glossary
 .. glossary::
     :sorted:
 
+    AT commands
+        A command language supported by the :term:`ELM327` with "AT" meaning
+        "attention."
+
     AV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries predominantly
         infotainment data. Exposed on pins 3 and 11 of the
@@ -40,6 +44,22 @@ Glossary
         :term:`ISO 15031-3`) is a 16-pin connector which, on a *Nissan Leaf*,
         is located beneath the steering column.
 
+    diagnostic tool
+        An electronic device that interfaces with a vehicle's
+        :term:`diagnostic connector`.
+
+    ELM327
+        A proprietary, pre-programmed, microcontroller produced by
+        `ELM Electronics Inc.`_ for communicating with a vehicle's
+        :term:`on-board diagnostics` interface. The ELM327 command protocol is
+        one of the most popular PC-to-OBD interface standards and is also
+        implemented by other vendors.
+
+    ELM327 compatible
+        Used to describe a device capable of translating the
+        :term:`on-board diagnostics` interface and which supports the ELM327
+        command set.
+
     EV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries data related to
         the traction battery and electric motor drive system. Exposed on pins 3
@@ -69,12 +89,21 @@ Glossary
         A term referring to a vehicle's self-diagnostic and reporting
         capability.
 
+    parameter ID
+        A hexadecimal code used to identify data on a CAN bus.
+
+    PID
+        Abbreviation for :term:`parameter ID`.
+
     SAE J1962
         Document published by `SAE International`_ titled *Diagnostic Connector
         Equivalent to ISO/DIS 15031-3:December 14, 2001*. This document
         specifies the functional requirements for the physical :term:`OBD-II`
         :term:`diagnostic connector`. The equivalent international standard is
         :term:`ISO 15031-3`.
+
+    terminal application
+        Application that sends and receives text data over a serial interface.
 
     Type A diagnostic connector
         A :term:`diagnostic connector` defined in Figure A.1 of
@@ -83,5 +112,6 @@ Glossary
 
 .. target-notes::
 
+.. _`ELM Electronics Inc.`: https://www.elmelectronics.com/
 .. _`International Organization for Standardization`: https://www.iso.org/
 .. _`SAE International`: https://www.sae.org/

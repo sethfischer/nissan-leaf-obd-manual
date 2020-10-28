@@ -1,3 +1,8 @@
+.. spelling::
+
+    Morich
+
+
 ============
 Bibliography
 ============
