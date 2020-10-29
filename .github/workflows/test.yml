@@ -10,6 +10,7 @@ jobs:
               uses: actions/checkout@v2
               with:
                 lfs: true
+                submodules: true
 
             - name: Checkout LFS objects
               run: git lfs checkout
@@ -29,3 +30,15 @@ jobs:
 
             - name: Check links in documentation
               run: make linkcheck
+
+            - name: Install Vale
+              run: |
+                curl --location https://github.com/errata-ai/vale/releases/download/v2.4.0/vale_2.4.0_Linux_64-bit.tar.gz --output vale.tar.gz
+                mkdir "${GITHUB_WORKSPACE}/bin"
+                tar xvfz vale.tar.gz --directory "${GITHUB_WORKSPACE}/bin" vale
+                echo "${GITHUB_WORKSPACE}/bin" >> $GITHUB_PATH
+
+            - name: Lint prose
+              run: |
+                vale --version
+                bash lint-prose.sh
