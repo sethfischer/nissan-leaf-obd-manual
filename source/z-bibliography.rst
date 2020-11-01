@@ -2,9 +2,11 @@
 
     Morich
 
+.. only:: not latex
 
-============
-Bibliography
-============
+    ============
+    Bibliography
+    ============
+
 
 .. bibliography:: bibliography.bib

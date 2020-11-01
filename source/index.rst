@@ -25,19 +25,21 @@ Contents
 
     tutorial/*
 
-.. toctree::
-    :caption: End matter
-    :maxdepth: 1
-    :titlesonly:
 
-    related
-    glossary
-    z-bibliography
-    disclaimer
-    license
+.. only:: html
 
+    .. toctree::
+        :caption: End matter
+        :maxdepth: 1
+        :titlesonly:
 
-Indices
--------
+        related
+        glossary
+        z-bibliography
+        disclaimer
+        license
 
-* :ref:`genindex`
+    Indices
+    -------
+
+    * :ref:`genindex`

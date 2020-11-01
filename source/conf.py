@@ -91,6 +91,13 @@ html_title = project
 html_use_index = True
 
 
+latex_appendices = [
+    "related",
+    "glossary",
+    "disclaimer",
+    "license",
+    "z-bibliography",
+]
 latex_elements = {
     "papersize": "a4paper",
     "preamble": r"""
