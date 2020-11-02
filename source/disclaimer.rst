@@ -5,8 +5,7 @@ Disclaimer
 .. note:: This project is neither maintained nor endorsed by *Nissan*.
 
 
-Advisory issued by *Nissan*
----------------------------
+.. rubric:: Advisory issued by *Nissan*
 
 An advisory issued by *Nissan* states that an after market diagnostic tool
 should never be connected to the diagnostic connector.
