@@ -117,6 +117,7 @@ latex_elements = {
 """,
 }
 latex_engine = "platex"
+latex_show_pagerefs = True
 latex_show_urls = "footnote"
 latex_use_xindy = False
 
