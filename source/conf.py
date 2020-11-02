@@ -98,11 +98,22 @@ latex_appendices = [
     "license",
     "z-bibliography",
 ]
+latex_documents = [
+    (
+        "index.latex",
+        "leaf-obd.tex",
+        project,
+        author,
+        "manual",
+        False,
+    ),
+]
 latex_elements = {
     "papersize": "a4paper",
     "preamble": r"""
 \usepackage{CJKutf8}
 \newcommand*{\OBDtwo}{OBD-\uppercase\expandafter{\romannumeral 2}}
+\setcounter{tocdepth}{1}
 """,
 }
 latex_engine = "platex"
