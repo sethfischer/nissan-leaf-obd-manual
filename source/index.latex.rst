@@ -14,6 +14,16 @@ Reference
     diagnostic-connector
 
 
+Parameter identifiers
+---------------------
+
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    pid/index
+
+
 Tutorials
 ---------
 

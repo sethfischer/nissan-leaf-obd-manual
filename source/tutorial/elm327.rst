@@ -245,6 +245,9 @@ shown in :numref:`serial-terminal-elm327-morich`.
     :doc:`/diagnostic-connector`
         Detailed description of the *Leaf* OBD-II diagnostic connector.
 
+    :doc:`/pid/358`
+        PID 0x358 Turn signal.
+
 
 .. _`Serial Wi-Fi Terminal`: https://play.google.com/store/apps/details?id=de.kai_morich.serial_wifi_terminal
 .. _`Kai Morich`: https://play.google.com/store/apps/developer?id=Kai+Morich

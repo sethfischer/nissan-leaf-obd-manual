@@ -1,6 +1,7 @@
 .. spelling::
 
     Morich
+    Öster
 
 .. only:: not latex
 

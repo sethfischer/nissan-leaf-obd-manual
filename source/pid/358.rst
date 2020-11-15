@@ -1,0 +1,35 @@
+===============
+358 Turn signal
+===============
+
+:PID: 0x358
+:Name: Turn signal
+
+
+2013
+----
+
+.. table:: PID 0x358
+    :name: pid-358
+
+    +-----+------+------+----------------------+-----------------+------+-----+-----+
+    | PID | Byte | Bits | Description          | Formula         | Unit | Min | Max |
+    +=====+======+======+======================+=================+======+=====+=====+
+    | 358 | B    | 1:1  | turn signal left     | | 1 == active;  |      |     |     |
+    |     |      |      |                      | | 0 == inactive |      |     |     |
+    |     |      +------+----------------------+-----------------+------+-----+-----+
+    |     |      | 2:2  | turn signal right    | | 1 == active;  |      |     |     |
+    |     |      |      |                      | | 0 == inactive |      |     |     |
+    +-----+------+------+----------------------+-----------------+------+-----+-----+
+
+Adapted from :cite:`dalathegreat:leaf_can_bus_messages`.
+
+
+ELM327 session
+~~~~~~~~~~~~~~
+
+.. literalinclude:: /code/elm327/358-turn-signal.txt
+    :caption: Read PID 0x358 -- turn signal status
+    :language: none
+    :linenos:
+    :name: elm327-358-turn-signal

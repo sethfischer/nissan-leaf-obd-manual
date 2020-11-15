@@ -19,6 +19,14 @@ Nissan Leaf OBD-II manual
 
 
 .. toctree::
+    :caption: Parameter identifiers
+    :glob:
+    :maxdepth: 1
+
+    pid/index
+
+
+.. toctree::
     :caption: End matter
     :maxdepth: 1
     :titlesonly:
