@@ -21,7 +21,7 @@ Parameter identifiers
     :glob:
     :maxdepth: 1
 
-    pid/index
+    pid/[0-9a-f][0-9a-f][0-9a-f]
 
 
 Tutorials
