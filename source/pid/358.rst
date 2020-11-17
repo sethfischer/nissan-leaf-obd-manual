@@ -9,6 +9,15 @@
 2013
 ----
 
+.. table:: PID 0x358 -- transmit frequencies
+    :name: pid-358-tx-frequencies
+
+    +---------+----------------+
+    | Bus     | Frequency (Hz) |
+    +=========+================+
+    | Car-CAN | 10             |
+    +---------+----------------+
+
 .. table:: PID 0x358
     :name: pid-358
 

@@ -9,6 +9,15 @@
 2013
 ----
 
+.. table:: PID 0x5c5 -- transmit frequencies
+    :name: pid-5c5-tx-frequencies
+
+    +---------+----------------+
+    | Bus     | Frequency (Hz) |
+    +=========+================+
+    | Car-CAN | 10             |
+    +---------+----------------+
+
 .. table:: PID 0x5C5
     :name: pid-5c5
 
