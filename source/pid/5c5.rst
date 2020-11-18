@@ -9,7 +9,7 @@
 2013
 ----
 
-.. table:: PID 0x5c5 -- transmit frequencies
+.. table:: PID 0x5C5 -- transmit frequencies
     :name: pid-5c5-tx-frequencies
 
     +---------+----------------+
