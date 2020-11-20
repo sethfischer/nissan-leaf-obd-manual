@@ -47,10 +47,13 @@ ELM327 session
     :name: elm327-5c5
 
 
-Calculation
-~~~~~~~~~~~
+Calculations
+~~~~~~~~~~~~
+
+Odometer reading :eq:`5c5-odometer`:
 
 .. math::
+    :label: 5c5-odometer
 
     Given:
 
