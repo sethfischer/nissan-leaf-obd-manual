@@ -7,7 +7,7 @@ Related material
     *Nissan* service manuals.
 
 `Open Vehicle Monitoring System 3`_
-    An open-source vehicle monitoring, diagnosis and control system.
+    An open source vehicle monitoring, diagnosis, and control system.
 
 
 .. _`Nissan Publications`: https://www.nissan-techinfo.com/
