@@ -1,5 +1,5 @@
 ============
-5C5 Odometer
+5C5 odometer
 ============
 
 :PID: 0x5C5
