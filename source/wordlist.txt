@@ -3,4 +3,5 @@ dc
 ethernet
 kBd
 OBD
+SoH
 Wi

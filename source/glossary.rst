@@ -65,6 +65,10 @@ Glossary
         the traction battery and electric motor drive system. Exposed on pins 3
         and 11 of the :term:`diagnostic connector`.
 
+    GID
+        Unit named after Gary Giddings who is credited with discovering the
+        significance of :doc:`/pid/5b3` byte F.
+
     ISO 15031-3
         Document published by the
         `International Organization for Standardization`_ (ISO) titled *Road
@@ -94,6 +98,10 @@ Glossary
 
     PID
         Abbreviation for :term:`parameter ID`.
+
+    SoH
+        State of Heath. Measure of the ability of a battery to store and
+        deliver electrical energy relative to a new battery.
 
     SAE J1962
         Document published by `SAE International`_ titled *Diagnostic Connector

@@ -2,6 +2,7 @@ AT[A-Z]{0,3}\b
 DIS
 ELM
 ethernet
+Giddings
 ISO
 Jidosha
 Kabushiki

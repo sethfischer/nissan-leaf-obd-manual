@@ -1,0 +1,91 @@
+============
+5B3 SoH, GID
+============
+
+:PID: 0x5B3
+:Name: SoH, GID
+
+
+2013
+----
+
+.. table:: PID 0x5B3 -- transmit frequencies
+    :name: pid-5b3-tx-frequencies
+
+    +---------+----------------+
+    | Bus     | Frequency (Hz) |
+    +=========+================+
+    | Car-CAN | 2              |
+    +---------+----------------+
+
+.. table:: PID 0x5B3 -- response
+    :name: pid-5b3
+
+    +-----+------+------+--------------------+-------------+------+-----+-----+
+    | PID | Byte | Bits | Description        | Formula     | Unit | Min | Max |
+    +=====+======+======+====================+=============+======+=====+=====+
+    | 3B3 | B    | 7:1  | Traction battery   |             |      | 0   | 100 |
+    |     |      |      | state of health    |             |      |     |     |
+    |     |      |      | (:term:`SoH`)      |             |      |     |     |
+    |     +------+------+--------------------+-------------+------+-----+-----+
+    |     | F    | 7:0  | Traction battery   | .. math::   | W⋅h  | 0   |     |
+    |     |      |      | stored energy [#]_ |             |      |     |     |
+    |     |      |      |                    |  F \cdot 80 |      |     |     |
+    +-----+------+------+--------------------+-------------+------+-----+-----+
+
+.. [#] Raw value of byte F is often referred to as being measured in
+    :term:`GIDs<GID>`, where 1 GID = 80 W⋅h.
+
+Adapted from: :cite:`openvehicles:ovms3`,
+:cite:`dalathegreat:leaf_can_bus_messages`.
+5C5 odometer
+
+ELM327 session
+~~~~~~~~~~~~~~
+
+.. literalinclude:: /code/elm327/5b3.txt
+    :caption: Read PID 0x5B3 -- GID
+    :language: none
+    :linenos:
+    :name: elm327-5b3
+
+
+Calculations
+~~~~~~~~~~~~
+
+Traction battery stored energy :eq:`5b3-stored-energy`:
+
+.. math::
+    :label: 5b3-stored-energy
+
+    Given:
+
+    byteF &= E6_{16} = 123_{10}
+
+    Then:
+
+    E_{stored} &= byteF_{10} \cdot 80_{10}\ W \mathord{\cdot} h
+
+    &= 123_{10} \cdot 80_{10}\ W \mathord{\cdot} h
+
+    &= 9840_{10}\ W \mathord{\cdot} h
+
+
+Traction battery state of health (SoH) :eq:`5b3-soh`:
+
+.. math::
+    :label: 5b3-soh
+
+    Given:
+
+    byteB &= A2_{16} = 10100010_{2}
+
+    Then:
+
+    SoH &= byteB_{2} >> 1
+
+    &= 10100010_{2} >> 1
+
+    &= 01010001_{2}
+
+    &= 81_{10} \%
