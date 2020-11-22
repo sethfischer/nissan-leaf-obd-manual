@@ -6,7 +6,9 @@ swap:
   "data link": "diagnostic connector"
   "obd 2": OBD-II
   datalink: "diagnostic connector"
+  gid: GID
   obd-2: OBD-II
   obd: OBD
   obd2: OBD-II
   obdii: OBD-II
+  soh: SoH
