@@ -72,8 +72,8 @@ four-pair ethernet cable.
 As can be seen in
 :numref:`leaf-diagnostic-connector-contact-designation-legend`, the *Leaf* uses
 five of the contacts with a mandated designation: chassis ground, signal
-ground, Car‑CAN high, Car‑CAN low, and permanent +12 V DC. The designation of
-the remaining pins is specific to the *Leaf*: AV‑CAN low, +12 V DC when vehicle
+ground, Car‑CAN high, Car‑CAN low, and permanent +12 V DC. The designation of
+the remaining pins is specific to the *Leaf*: AV‑CAN low, +12 V DC when vehicle
 powered on, AV‑CAN high, EV‑CAN low, and EV‑CAN high.
 
 .. table:: *Nissan Leaf* vehicle diagnostic connector contact designation
@@ -97,7 +97,7 @@ powered on, AV‑CAN high, EV‑CAN low, and EV‑CAN high.
     +-----+---------------------+---------------------------------------+
     | 7   | |dc-nc|             | No connection [2]_                    |
     +-----+---------------------+---------------------------------------+
-    | 8   | |dc-power-on|       | +12 V DC when vehicle powered on [3]_ |
+    | 8   | |dc-power-on|       | +12 V DC when vehicle powered on [3]_ |
     +-----+---------------------+---------------------------------------+
     | 9   | |dc-nc|             | No connection                         |
     +-----+---------------------+---------------------------------------+
@@ -113,7 +113,7 @@ powered on, AV‑CAN high, EV‑CAN low, and EV‑CAN high.
     +-----+---------------------+---------------------------------------+
     | 15  | |dc-nc|             | No connection [2]_                    |
     +-----+---------------------+---------------------------------------+
-    | 16  | |dc-12vdc|          | Permanent +12 V DC [2]_               |
+    | 16  | |dc-12vdc|          | Permanent +12 V DC [2]_               |
     +-----+---------------------+---------------------------------------+
 
 .. [1] CAN bus symbol colours correspond to 4-pair ethernet cable colour code.
