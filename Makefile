@@ -25,6 +25,12 @@ install-ide-config:
 	rsync --recursive ide-config/ .
 	cp source/wordlist.txt .vscode/spellright.dict
 
+.PHONY: install-vale-styles
+install-vale-styles:
+	rm -rf styles/Google
+	curl -sL https://github.com/errata-ai/Google/archive/v0.3.1.tar.gz \
+	| tar zxf - -C styles/ --strip-components=1 Google-0.3.1/Google
+
 .PHONY: lint
 lint: lint-prose
 

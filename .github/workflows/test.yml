@@ -10,7 +10,6 @@ jobs:
               uses: actions/checkout@v2
               with:
                 lfs: true
-                submodules: true
 
             - name: Checkout LFS objects
               run: git lfs checkout
@@ -30,6 +29,9 @@ jobs:
 
             - name: Check links in documentation
               run: make linkcheck
+
+            - name: Install Vale styles
+              run: curl -sL https://github.com/errata-ai/Google/archive/v0.3.1.tar.gz | tar zxf - -C "${GITHUB_WORKSPACE}/styles/" --strip-components=1 Google-0.3.1/Google
 
             - name: Install Vale
               run: |
