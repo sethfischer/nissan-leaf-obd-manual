@@ -1,0 +1,11 @@
+extends: substitution
+message: Prefer '%s' over '%s'
+nonword: true
+ignorecase: false
+level: error
+action:
+  name: replace
+swap:
+  '(?:[aA]{1}[vV]{1})[ -]?(?:[cC]{1}[aA]{1}[nN]{1})': AV-CAN
+  '(?:[cC]{1}[aA]{1}[rR]{1})[ -]?(?:[cC]{1}[aA]{1}[nN]{1})': Car-CAN
+  '(?:[eE]{1}[vV]{1})[ -]?(?:[cC]{1}[aA]{1}[nN]{1})': EV-CAN
