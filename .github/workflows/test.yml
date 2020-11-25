@@ -3,44 +3,44 @@ name: test
 on: [pull_request, push]
 
 jobs:
-    test:
-        runs-on: ubuntu-20.04
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-              with:
-                lfs: true
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
 
-            - name: Checkout LFS objects
-              run: git lfs checkout
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
-            - name: Set up Python
-              uses: actions/setup-python@v2
-              with:
-                  python-version: '3.8'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
 
-            - name: Install Python requirements
-              run: |
-                python -m pip install --upgrade pip
-                pip install -r requirements.txt
+      - name: Install Python requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-            - name: Build HTML
-              run: make html
+      - name: Build HTML
+        run: make html
 
-            - name: Check links in documentation
-              run: make linkcheck
+      - name: Check links in documentation
+        run: make linkcheck
 
-            - name: Install Vale styles
-              run: curl -sL https://github.com/errata-ai/Google/archive/v0.3.1.tar.gz | tar zxf - -C "${GITHUB_WORKSPACE}/styles/" --strip-components=1 Google-0.3.1/Google
+      - name: Install Vale styles
+        run: curl -sL https://github.com/errata-ai/Google/archive/v0.3.1.tar.gz | tar zxf - -C "${GITHUB_WORKSPACE}/styles/" --strip-components=1 Google-0.3.1/Google
 
-            - name: Install Vale
-              run: |
-                curl --location https://github.com/errata-ai/vale/releases/download/v2.6.3/vale_2.6.3_Linux_64-bit.tar.gz --output vale.tar.gz
-                mkdir "${GITHUB_WORKSPACE}/bin"
-                tar xvfz vale.tar.gz --directory "${GITHUB_WORKSPACE}/bin" vale
-                echo "${GITHUB_WORKSPACE}/bin" >> $GITHUB_PATH
+      - name: Install Vale
+        run: |
+          curl --location https://github.com/errata-ai/vale/releases/download/v2.6.3/vale_2.6.3_Linux_64-bit.tar.gz --output vale.tar.gz
+          mkdir "${GITHUB_WORKSPACE}/bin"
+          tar xvfz vale.tar.gz --directory "${GITHUB_WORKSPACE}/bin" vale
+          echo "${GITHUB_WORKSPACE}/bin" >> $GITHUB_PATH
 
-            - name: Lint prose
-              run: |
-                vale --version
-                bash lint-prose.sh
+      - name: Lint prose
+        run: |
+          vale --version
+          bash lint-prose.sh

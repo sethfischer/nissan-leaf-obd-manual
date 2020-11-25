@@ -3,6 +3,6 @@ message: "Use 'AC' or 'DC' (preceded by a nonbreaking space)."
 level: error
 nonword: true
 tokens:
-  - '[AV][AD]C'
+  - "[AV][AD]C"
   - '[AV]\s*[da]c'
   - '[AV]\s*[aAdD]\.[cC]\.'
