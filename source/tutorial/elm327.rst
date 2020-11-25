@@ -106,10 +106,10 @@ CAN (11-bit ID, 500 :term:`kBd`) which is often abbreviated to
 
 Standard OBD-II diagnostic tools connect to the Car-CAN bus on pins 6 and 14.
 
-While the *Leaf* has a 16-pin OBD-II :term:`diagnostic connector` in compliance
-with :term:`ISO 15031-3`, and the Car-CAN protocol complies with
-ISO 15765‑4 (CAN 11/500), the vehicle does not support the standard
-:term:`PIDs<PID>` which are mandated for internal combustion engine vehicles.
+The *Leaf* does not support any the standard :term:`PIDs<PID>` which are
+mandated for internal combustion engine vehicles. This is despite having a
+OBD-II :term:`diagnostic connector` in compliance with :term:`ISO 15031-3`, and
+the CAN protocols complying with ISO 15765‑4.
 
 In addition to the *Leaf* not supporting standard PIDs there can be PID
 variations between *Leaf* models.
