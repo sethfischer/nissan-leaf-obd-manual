@@ -31,7 +31,7 @@ jobs:
         run: make linkcheck
 
       - name: Install Vale styles
-        run: curl -sL https://github.com/errata-ai/Google/archive/v0.3.1.tar.gz | tar zxf - -C "${GITHUB_WORKSPACE}/styles/" --strip-components=1 Google-0.3.1/Google
+        run: make install-vale-styles
 
       - name: Install Vale
         run: |
