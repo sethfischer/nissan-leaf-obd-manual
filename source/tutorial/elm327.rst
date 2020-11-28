@@ -55,7 +55,7 @@ The most common wired communication protocol is
     Unfortunately the market is flooded with counterfeit ELM327
     microcontrollers which have made their way into inexpensive diagnostic
     tools. Often these devices do not fully support the
-    `ELM327 specification`_.
+    `ELM327 specification`_ :cite:`turbo3:leafspy-help`.
 
     Genuine ELM327 microcontrollers are supplied by `ELM Electronics Inc.`_ who
     recommend seeking the assurance from the device vendor that they use
