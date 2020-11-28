@@ -27,6 +27,11 @@ jobs:
       - name: Build HTML
         run: make html
 
+      - name: Check spelling
+        run: |
+          sudo apt-get install enchant hunspell hunspell-en-gb
+          make spelling SPHINXOPTS="-W"
+
       - name: Check links in documentation
         run: make linkcheck
 
