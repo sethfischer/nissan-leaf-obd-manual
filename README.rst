@@ -10,18 +10,18 @@ Getting started
 
 .. code:: console
 
-    make install-ide-config
-    make install-vale-styles
-    make install-git-hooks
+    $ make install-ide-config
+    $ make install-vale-styles
+    $ make install-git-hooks
 
 .. code-block:: console
 
-    virtualenv .venv
-    . .venv/bin/activate
-    pip install -U pip
-    pip install -r requirements.txt
-    pip install -r requirements.dev.txt
-    make html
+    $ virtualenv .venv
+    $ . .venv/bin/activate
+    $ pip install -U pip
+    $ pip install -r requirements.txt
+    $ pip install -r requirements.dev.txt
+    $ make html
 
 
 License
