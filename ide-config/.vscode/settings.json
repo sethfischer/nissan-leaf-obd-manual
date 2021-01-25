@@ -15,6 +15,9 @@
         ]
     },
     "editor.formatOnSave": true,
+    "files.associations": {
+        "requirements.dev.txt": "pip-requirements"
+    },
     "files.trimFinalNewlines": true,
     "python.formatting.provider": "black",
     "python.pythonPath": ".venv/bin/python",
