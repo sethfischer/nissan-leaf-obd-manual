@@ -44,5 +44,6 @@
         "en_NZ"
     ],
     "spellright.recheckOnSave": true,
-    "vale.core.useCLI": true
+    "vale.core.useCLI": true,
+    "xmlTools.splitAttributesOnFormat": true
 }
