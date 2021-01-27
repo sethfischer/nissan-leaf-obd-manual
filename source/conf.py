@@ -122,6 +122,11 @@ latex_show_urls = "footnote"
 latex_use_xindy = False
 
 
+linkcheck_ignore = [
+    r"http://www.leafspypro.com/",  # persistent DNS time-outs
+]
+
+
 spelling_exclude_patterns = [
     "disclaimer.rst",  # contains Japanese characters
 ]
