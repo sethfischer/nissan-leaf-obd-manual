@@ -56,7 +56,7 @@ try:
         ["git", "rev-parse", "--short", "HEAD"], capture_output=True, encoding="ascii"
     )
     revision = process.stdout.strip()
-except CalledProcessError as error:
+except CalledProcessError:
     revision = None
 
 version = date.today().strftime("%Y.%-m.%-d")
