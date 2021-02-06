@@ -2,7 +2,7 @@ from datetime import date
 from subprocess import CalledProcessError, run
 
 import os
-import sphinx_rtd_theme
+import sphinx_rtd_theme  # noqa: F401
 
 
 DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))

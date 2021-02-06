@@ -12,6 +12,7 @@ contextlib2==0.6.0
 distlib==0.3.0
 distro==1.4.0
 docutils==0.16
+flake8==3.8.4
 html5lib==1.0.1
 idna==2.8
 imagesize==1.2.0
@@ -32,7 +33,9 @@ pep517==0.8.2
 progress==1.5
 pybtex==0.22.2
 pybtex-docutils==0.2.2
+pycodestyle==2.6.0
 pyenchant==3.1.1
+pyflakes==2.2.0
 Pygments==2.6.1
 pylint==2.6.0
 pyparsing==2.4.6

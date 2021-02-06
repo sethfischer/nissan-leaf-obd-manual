@@ -29,10 +29,10 @@ install-vale-styles:
 	| tar zxf - -C styles/ --strip-components=1 Google-0.3.1/Google
 
 .PHONY: lint
-lint: lint-prose
+lint: lint-prose lint-python
 
-.PHONY: lint-prose
-lint-prose:
+.PHONY: lint-prose lint-python
+lint-prose lint-python:
 	./$@.sh
 
 # Catch-all target

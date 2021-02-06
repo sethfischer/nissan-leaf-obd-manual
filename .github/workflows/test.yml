@@ -35,6 +35,9 @@ jobs:
       - name: Check links
         run: make linkcheck
 
+      - name: Lint Python files
+        run: make lint-python
+
       - name: Install Vale styles
         run: make install-vale-styles
 
