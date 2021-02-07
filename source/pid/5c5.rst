@@ -37,14 +37,16 @@
 Adapted from :cite:`dalathegreat:leaf_can_bus_messages`.
 
 
-ELM327 session
-~~~~~~~~~~~~~~
+ELM327 console session
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: /code/elm327/5c5.txt
-    :caption: Read PID 0x5C5 -- odometer
+    :caption: Read PID 0x5C5 -- odometer (ELM327 console)
     :language: none
     :linenos:
     :name: elm327-5c5
+
+:download:`Read PID 0x5C5 – odometer (ELM327 console) </code/elm327/5c5.txt>`
 
 
 Calculations

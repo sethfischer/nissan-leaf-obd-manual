@@ -34,11 +34,13 @@
 Adapted from :cite:`dalathegreat:leaf_can_bus_messages`.
 
 
-ELM327 session
-~~~~~~~~~~~~~~
+ELM327 console session
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: /code/elm327/358-turn-signal.txt
-    :caption: Read PID 0x358 -- turn signal status
+    :caption: Read PID 0x358 -- turn signal status (ELM327 console)
     :language: none
     :linenos:
     :name: elm327-358-turn-signal
+
+:download:`Read PID 0x358 – turn signal status (ELM327 console) </code/elm327/358-turn-signal.txt>`

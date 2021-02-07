@@ -40,14 +40,16 @@ Adapted from: :cite:`openvehicles:ovms3`,
 :cite:`dalathegreat:leaf_can_bus_messages`.
 5C5 odometer
 
-ELM327 session
-~~~~~~~~~~~~~~
+ELM327 console session
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: /code/elm327/5b3.txt
-    :caption: Read PID 0x5B3 -- GID
+    :caption: Read PID 0x5B3 -- GID (ELM327 console)
     :language: none
     :linenos:
     :name: elm327-5b3
+
+:download:`Read PID 0x5B3 – GID (ELM327 console) </code/elm327/5b3.txt>`
 
 
 Calculations
