@@ -4,4 +4,4 @@ set -o errexit -o noclobber -o nounset
 
 make linkcheck
 make spelling SPHINXOPTS="-W"
-make lint-prose
+make lint
