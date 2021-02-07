@@ -44,3 +44,15 @@ ELM327 console session
     :name: elm327-358-turn-signal
 
 :download:`Read PID 0x358 – turn signal status (ELM327 console) </code/elm327/358-turn-signal.txt>`
+
+
+ELM327 Python script
+~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: /code/elm327/358-turn-signal.py
+    :caption: Read PID 0x358 -- turn signal status (ELM327 Python script)
+    :language: python
+    :linenos:
+    :name: elm327-358-turn-signal-python
+
+:download:`Read PID 0x358 – turn signal status (ELM327 Python script) </code/elm327/358-turn-signal.py>`

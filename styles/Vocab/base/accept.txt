@@ -1,6 +1,7 @@
 AT[A-Z]{0,3}\b
 DIS
 ELM
+env
 ethernet
 GID
 Giddings
@@ -19,3 +20,4 @@ OBD
 PID
 SAE
 SoH
+usr
