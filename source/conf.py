@@ -1,9 +1,8 @@
+import os
 from datetime import date
 from subprocess import CalledProcessError, run
 
-import os
 import sphinx_rtd_theme  # noqa: F401
-
 
 DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(DOC_SOURCES_DIR))
