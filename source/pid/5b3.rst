@@ -38,7 +38,7 @@
 
 Adapted from: :cite:`openvehicles:ovms3`,
 :cite:`dalathegreat:leaf_can_bus_messages`.
-5C5 odometer
+
 
 ELM327 console session
 ~~~~~~~~~~~~~~~~~~~~~~
