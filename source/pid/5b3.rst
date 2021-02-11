@@ -6,7 +6,7 @@
 :Name: SoH, GID
 
 
-2013
+AZE0
 ----
 
 .. table:: PID 0x5B3 -- transmit frequencies
