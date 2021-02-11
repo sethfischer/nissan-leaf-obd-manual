@@ -49,8 +49,8 @@ ELM327 console session
 :download:`Read PID 0x5C5 – odometer (ELM327 console) </code/elm327/5c5.txt>`
 
 
-Calculations
-~~~~~~~~~~~~
+Equations
+~~~~~~~~~
 
 Odometer reading :eq:`5c5-odometer`:
 

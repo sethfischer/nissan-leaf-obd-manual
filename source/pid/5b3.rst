@@ -52,8 +52,8 @@ ELM327 console session
 :download:`Read PID 0x5B3 – GID (ELM327 console) </code/elm327/5b3.txt>`
 
 
-Calculations
-~~~~~~~~~~~~
+Equations
+~~~~~~~~~
 
 Traction battery stored energy :eq:`5b3-stored-energy`:
 
