@@ -75,6 +75,7 @@ extensions = [
     "sphinxcontrib.bibtex",
     "sphinxcontrib.spelling",
 ]
+math_eqref_format = "Equation ({number})"
 nitpicky = True
 numfig = True
 numfig_format = {"figure": "Figure %s"}
