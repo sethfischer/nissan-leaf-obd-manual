@@ -32,7 +32,7 @@ print(elm.read_until(b"\r\n>").decode())
 elm.write(b"ATAL\r")  # allow long messages
 print(elm.read_until(b"\r\n>").decode())
 
-elm.write(b"ATSP6\r")  # set protocol ISO 15765-4 CAN (11 bit 500 kBd)
+elm.write(b"ATSP6\r")  # set protocol ISO 15765-4 CAN (11/500)
 print(elm.read_until(b"\r\n>").decode())
 
 elm.write(b"ATCRA 358\r")  # set CAN receive address
