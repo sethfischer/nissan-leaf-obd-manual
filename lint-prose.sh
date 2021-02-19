@@ -10,4 +10,4 @@ if [ -n "${CI+x}" ]; then
     ci_alert_level="--minAlertLevel=error"
 fi
 
-vale --config "${directory}/.vale.ini" ${ci_alert_level} "${directory}/source/"
+vale --config="${directory}/.vale.ini" ${ci_alert_level} "${directory}/source/"
