@@ -29,13 +29,13 @@ License
 
 |license-cc-by-4.0| |license-mit|
 
-Prose is licensed under the Creative Commons
-`Attribution 4.0 International Public License`_ (CC BY 4.0).
+Prose is licensed under the
+`Creative Commons Attribution 4.0 International License`_ (CC BY 4.0).
 
 Code listings are licensed under the `MIT License`_.
 
 
-.. _`Attribution 4.0 International Public License`: LICENSE
+.. _`Creative Commons Attribution 4.0 International License`: LICENSE
 .. _`MIT License`: source/code/elm327/LICENSE
 
 
