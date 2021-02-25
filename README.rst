@@ -36,7 +36,7 @@ Code listings are licensed under the `MIT License`_.
 
 
 .. _`Creative Commons Attribution 4.0 International License`: LICENSE
-.. _`MIT License`: source/code/elm327/LICENSE
+.. _`MIT License`: source/code/LICENSE
 
 
 .. |docs-status| image:: https://readthedocs.org/projects/leaf-obd/badge/?version=latest
