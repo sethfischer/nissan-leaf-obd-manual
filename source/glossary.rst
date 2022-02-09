@@ -62,8 +62,8 @@ Glossary
 
     EV-CAN
         Name of the *Nissan Leaf* :term:`CAN` bus which carries data related to
-        the traction battery and electric motor drive system. Exposed on pins 3
-        and 11 of the :term:`diagnostic connector`.
+        the traction battery and electric motor drive system. Exposed on pins
+        12 and 13 of the :term:`diagnostic connector`.
 
     GID
         Unit named after Gary Giddings who is credited with discovering the
