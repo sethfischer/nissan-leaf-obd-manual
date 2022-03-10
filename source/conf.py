@@ -116,10 +116,8 @@ latex_elements = {
 \setcounter{tocdepth}{1}
 """,
 }
-latex_engine = "platex"
 latex_show_pagerefs = True
 latex_show_urls = "footnote"
-latex_use_xindy = False
 
 
 linkcheck_ignore = [
