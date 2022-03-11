@@ -19,24 +19,27 @@ jobs:
         with:
           python-version: "3.8"
 
-      - name: Install Python requirements
+      - name: Install Poetry
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry --version
+
+      - name: Install dependencies
+        run: poetry install --no-interaction
 
       - name: Build HTML
-        run: make html
+        run: poetry run make html
 
       - name: Check spelling
         run: |
           sudo apt-get install enchant hunspell hunspell-en-gb
-          make spelling SPHINXOPTS="-W"
+          poetry run make spelling SPHINXOPTS="-W"
 
       - name: Check links
-        run: make linkcheck
+        run: poetry run make linkcheck
 
       - name: Lint Python files
-        run: make lint-python
+        run: poetry run make lint-python
 
       - name: Install Vale styles
         run: make install-vale-styles
@@ -51,4 +54,4 @@ jobs:
       - name: Lint prose
         run: |
           vale --v
-          bash lint-prose.sh
+          poetry run bash lint-prose.sh
