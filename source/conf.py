@@ -114,6 +114,7 @@ latex_elements = {
 \usepackage{CJKutf8}
 \newcommand*{\OBDtwo}{OBD-\uppercase\expandafter{\romannumeral 2}}
 \setcounter{tocdepth}{1}
+\DeclareUnicodeCharacter{022C5}{\cdot}
 """,
 }
 latex_show_pagerefs = True
