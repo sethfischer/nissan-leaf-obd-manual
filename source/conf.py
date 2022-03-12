@@ -121,6 +121,9 @@ latex_show_pagerefs = True
 latex_show_urls = "footnote"
 
 
+bibtex_bibfiles = ["bibliography.bib"]
+
+
 linkcheck_ignore = [
     r"http://www.leafspypro.com/",  # persistent DNS time-outs
 ]

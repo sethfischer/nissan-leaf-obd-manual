@@ -7,11 +7,10 @@ license = "CC-BY-4.0"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Sphinx = "^3.2.1"
-sphinx-rtd-theme = "0.5.0"
-sphinxcontrib-bibtex = "1.0.0"
-sphinxcontrib-spelling = "5.4.0"
-docutils = "0.17"
+Sphinx = "^4.4.0"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-bibtex = "^2.4.1"
+sphinxcontrib-spelling = "^7.3.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
