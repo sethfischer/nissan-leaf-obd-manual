@@ -1,50 +1,7 @@
-import os
 from datetime import date
 from subprocess import CalledProcessError, run
 
 import sphinx_rtd_theme  # noqa: F401
-
-DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(DOC_SOURCES_DIR))
-
-
-on_rtd = os.environ.get("READTHEDOCS", None) == "True"
-
-if on_rtd:
-    RTD_SLUG = "leaf-obd"
-    RTD_BIN_DIRECTORY = (
-        "/home/docs/checkouts/readthedocs.org/user_builds/{}/envs/latest/bin".format(
-            RTD_SLUG
-        )
-    )
-
-    GIT_LFS_VERSION = "2.12.0"
-    GIT_LFS_TAR_BALL = "git-lfs-linux-amd64-v{}.tar.gz".format(GIT_LFS_VERSION)
-    GIT_LFS_TAR_BALL_URL = (
-        "https://github.com/git-lfs/git-lfs/releases/download/v{}/{}".format(
-            GIT_LFS_VERSION, GIT_LFS_TAR_BALL
-        )
-    )
-
-    if not os.path.isfile(GIT_LFS_TAR_BALL):
-        run(
-            [
-                "curl",
-                "--location",
-                "--silent",
-                GIT_LFS_TAR_BALL_URL,
-                "--output",
-                GIT_LFS_TAR_BALL,
-            ]
-        )
-
-    if not os.path.isfile("git-lfs"):
-        run(["tar", "xvfz", GIT_LFS_TAR_BALL, "git-lfs"])
-        run(["cp", "git-lfs", RTD_BIN_DIRECTORY])
-        run(["git-lfs", "install"])
-        run(["git-lfs", "fetch"])
-        run(["git-lfs", "checkout"])
-
 
 project = "Nissan Leaf OBD-II manual"
 author = "Seth Fischer"
