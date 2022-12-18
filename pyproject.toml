@@ -12,7 +12,7 @@ sphinx-rtd-theme = "^1.0.0"
 sphinxcontrib-bibtex = "^2.4.1"
 sphinxcontrib-spelling = "^7.3.2"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^22.1.0"
 flake8 = "^4.0.1"
 isort = "^5.10.1"
@@ -20,5 +20,5 @@ pyserial = "^3.5"
 rope = "^0.23.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
