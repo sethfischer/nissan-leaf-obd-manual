@@ -121,5 +121,5 @@ Glossary
 .. target-notes::
 
 .. _`ELM Electronics Inc.`: https://www.elmelectronics.com/
-.. _`International Organization for Standardization`: https://www.iso.org/
+.. _`International Organization for Standardization`: https://www.iso.org/home.html
 .. _`SAE International`: https://www.sae.org/
