@@ -5,7 +5,7 @@ import sphinx_rtd_theme  # noqa: F401
 
 project = "Nissan Leaf OBD-II manual"
 author = "Seth Fischer"
-copyright = "2020, Seth Fischer"
+project_copyright = f"{date.today().year}, {author}"
 
 try:
     process = run(
