@@ -46,7 +46,7 @@ jobs:
 
       - name: Install Vale
         run: |
-          curl --location https://github.com/errata-ai/vale/releases/download/v2.9.1/vale_2.9.1_Linux_64-bit.tar.gz --output vale.tar.gz
+          curl --location https://github.com/errata-ai/vale/releases/download/v2.22.0/vale_2.22.0_Linux_64-bit.tar.gz --output vale.tar.gz
           mkdir "${GITHUB_WORKSPACE}/bin"
           tar xvfz vale.tar.gz --directory "${GITHUB_WORKSPACE}/bin" vale
           echo "${GITHUB_WORKSPACE}/bin" >> $GITHUB_PATH
