@@ -55,7 +55,7 @@ The most common wired communication protocol is
     Unfortunately the market is flooded with counterfeit ELM327
     microcontrollers which have made their way into inexpensive diagnostic
     tools. Often these devices do not fully support the
-    `ELM327 specification`_ :cite:`pollock:leafspy-help`.
+    ELM327 specification :cite:`pollock:leafspy-help`.
 
     Genuine ELM327 microcontrollers are supplied by `ELM Electronics Inc.`_ who
     recommend seeking the assurance from the device vendor that they use
@@ -174,7 +174,7 @@ AT commands
 
 Commands used in this tutorial are listed in table
 :numref:`command-descriptions`. The complete ELM327 command set can be found in
-the `ELM327 specification`_.
+the ELM327 specification.
 
 .. table:: ELM327 AT commands used in this tutorial :cite:`elm:elm327`
     :name: command-descriptions
@@ -251,7 +251,6 @@ shown in :numref:`serial-terminal-elm327-morich`.
 
 .. _`Serial Wi-Fi Terminal`: https://play.google.com/store/apps/details?id=de.kai_morich.serial_wifi_terminal
 .. _`Kai Morich`: https://play.google.com/store/apps/developer?id=Kai+Morich
-.. _`ELM327 specification`: https://www.elmelectronics.com/wp-content/uploads/2016/07/ELM327DS.pdf
 .. _`ELM Electronics Inc.`: https://www.elmelectronics.com/
 
 
