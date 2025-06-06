@@ -21,7 +21,7 @@
     "files.trimFinalNewlines": true,
     "python.formatting.provider": "black",
     "python.pythonPath": ".venv/bin/python",
-    "restructuredtext.builtDocumentationPath": "${workspaceFolder}/build",
+    "restructuredtext.builtDocumentationPath": "${workspaceFolder}/_build",
     "restructuredtext.confPath": "${workspaceFolder}/source",
     "spellright.configurationScope": "workspace",
     "spellright.configurationUpdate": true,
