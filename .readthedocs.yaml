@@ -1,13 +1,13 @@
 version: 2
 
 build:
-  os: ubuntu-20.04
+  os: ubuntu-24.04
   tools:
-    python: "3.9"
+    python: "3.12"
   jobs:
     post_checkout:
       - >
-        git_lfs_ver="3.3.0";
+        git_lfs_ver="3.6.1";
         wget -qO- https://github.com/git-lfs/git-lfs/releases/download/v${git_lfs_ver}/git-lfs-linux-amd64-v${git_lfs_ver}.tar.gz
         | tar -xOz git-lfs-${git_lfs_ver}/git-lfs > git-lfs
       - chmod u+x git-lfs
@@ -19,9 +19,8 @@ build:
       - ./git-lfs checkout
     post_create_environment:
         - pip install poetry
-        - poetry config virtualenvs.create false
     post_install:
-        - poetry install
+        - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install
 
 sphinx:
   configuration: source/conf.py
