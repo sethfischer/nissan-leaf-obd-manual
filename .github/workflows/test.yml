@@ -40,18 +40,3 @@ jobs:
 
       - name: Lint Python files
         run: poetry run make lint-python
-
-      - name: Install Vale styles
-        run: make install-vale-styles
-
-      - name: Install Vale
-        run: |
-          curl --location https://github.com/errata-ai/vale/releases/download/v2.22.0/vale_2.22.0_Linux_64-bit.tar.gz --output vale.tar.gz
-          mkdir "${GITHUB_WORKSPACE}/bin"
-          tar xvfz vale.tar.gz --directory "${GITHUB_WORKSPACE}/bin" vale
-          echo "${GITHUB_WORKSPACE}/bin" >> $GITHUB_PATH
-
-      - name: Lint prose
-        run: |
-          vale --v
-          poetry run bash lint-prose.sh

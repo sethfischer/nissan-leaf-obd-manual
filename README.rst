@@ -11,7 +11,6 @@ Getting started
 .. code:: console
 
     $ make install-ide-config
-    $ make install-vale-styles
     $ make install-git-hooks
 
 .. code-block:: console
