@@ -10,8 +10,6 @@ Disclaimer
 An advisory issued by *Nissan* states that an after market diagnostic tool
 should never be connected to the diagnostic connector.
 
-    .. vale off
-
     **About mounting external communication equipment on the OBD-II connector**
 
     **Do not attach an aftermarket communication device to the OBD-II
@@ -23,10 +21,6 @@ should never be connected to the diagnostic connector.
 
     -- Advisory issued by *Nissan* :cite:`nissan:recall-data` English
     translation by *Google Translate*
-
-    .. vale on
-
-.. vale off
 
 .. raw:: latex
 
@@ -50,13 +44,9 @@ should never be connected to the diagnostic connector.
     \end{quote}
 
 
-.. vale on
-
 .. only:: not latex
 
     Source of translation:
-
-        .. vale off
 
         **OBD-Ⅱコネクタへの社外品の通信機器装着について**
 
@@ -68,5 +58,3 @@ should never be connected to the diagnostic connector.
         制御に影響を与え、正常に作動せず、思わぬトラブルにつながるおそれがあります。
 
         -- Advisory issued by *Nissan* :cite:`nissan:recall-data`
-
-        .. vale on

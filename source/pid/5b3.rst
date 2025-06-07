@@ -49,7 +49,7 @@ ELM327 console
     :linenos:
     :name: elm327-5b3
 
-:download:`Read PID 0x5B3 – GID (ELM327 console) </code/elm327/5b3.txt>`
+:download:`Read PID 0x5B3 — GID (ELM327 console) </code/elm327/5b3.txt>`
 
 
 Equations
