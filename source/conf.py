@@ -82,7 +82,8 @@ bibtex_bibfiles = ["bibliography.bib"]
 
 
 linkcheck_ignore = [
-    r"http://www.leafspypro.com/",  # persistent DNS time-outs
+    "http://www.leafspypro.com/",  # persistent DNS time-outs
+    "https://www.elmelectronics.com/",  # no longer online
 ]
 
 
